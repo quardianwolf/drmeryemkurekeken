@@ -1,0 +1,677 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Antic Didone", sans-serif;
+  color: #1E3D64;
+}
+
+
+.swiper {
+  height: calc(91vh - 8px);
+  width: auto;
+}
+.swiper h2 {
+  color: #1E3D64;
+  font-size: 48px;
+}
+.swiper p {
+  color: #1E3D64;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+.swiper a {
+  color: #1E3D64;
+  font-size: 24px;
+  border-width: 1px;
+  border-color: #1E3D64;
+  padding: 2px;
+}
+.swiper .image1 {
+  z-index: 1;
+  position: relative;
+}
+.swiper .box {
+  z-index: 999;
+  position: absolute;
+  top: 25%;
+  right: 45%;
+  bottom: 0px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .swiper {
+    height: calc(70vh - 8px);
+    width: auto;
+  }
+  .swiper h2 {
+    font-size: 40px;
+  }
+  .swiper p {
+    font-size: 28px;
+  }
+  .swiper a {
+    color: #1E3D64;
+    font-size: 18px;
+    border-width: 1px;
+    border-color: #1E3D64;
+    padding: 2px;
+  }
+  .swiper .box {
+    top: 43%;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .swiper {
+    height: calc(41vh - 8px);
+    width: auto;
+  }
+  .swiper h2 {
+    font-size: 24px;
+  }
+  .swiper p {
+    font-size: 15px;
+  }
+  .swiper a {
+    color: #1E3D64;
+    font-size: 15px;
+    border-width: 1px;
+    border-color: #1E3D64;
+    padding: 2px;
+  }
+  .swiper .box {
+    top: 15%;
+    right: 50%;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .swiper {
+    height: calc(35vh - 8px);
+    width: auto;
+  }
+  .swiper h2 {
+    font-size: 30px;
+  }
+  .swiper p {
+    font-size: 20px;
+  }
+  .swiper a {
+    color: #1E3D64;
+    font-size: 20px;
+    border-width: 1px;
+    border-color: #1E3D64;
+    padding: 2px;
+  }
+  .swiper .box {
+    top: 25%;
+    right: 30%;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .swiper {
+    height: calc(60vh - 8px);
+    width: auto;
+  }
+  .swiper h2 {
+    font-size: 48px;
+  }
+  .swiper p {
+    font-size: 30px;
+  }
+  .swiper a {
+    color: #1E3D64;
+    font-size: 28px;
+    border-width: 1px;
+    border-color: #1E3D64;
+    padding: 2px;
+  }
+  .swiper .box {
+    top: 25%;
+    right: 30%;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+}
+.navbar {
+  z-index: 9999;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+.navbar ul li {
+  position: relative;
+}
+.navbar ul li a {
+  color: #54595F;
+  font-size: 18px !important;
+  line-height: 16px;
+  display: block;
+  padding: 10px 10px;
+}
+.navbar ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+.navbar ul li ul {
+  flex-direction: row;
+  position: absolute;
+  top: 150%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.navbar ul li ul li {
+  position: relative;
+}
+.navbar ul li ul li a {
+  color: #54595F;
+  font-size: 18px !important;
+  line-height: 16px;
+  display: block;
+  padding: 10px 10px;
+}
+@media only screen and (max-width: 700px) {
+  .navbar ul {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+  .navbar ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+body {
+  font-family: "Antic Didone", sans-serif;
+  color: #1E3D64;
+}
+
+#treatment-left {
+  background-color: #d7ebe4;
+  height: 80vh;
+  width: 100%;
+}
+
+.left-box .container {
+  height: 80vh;
+}
+.left-box .container .left {
+  margin-top: 13.5%;
+}
+.left-box .container .left img {
+  border-bottom-right-radius: 5rem;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.left-box .container .right {
+  position: relative;
+  margin-top: 13.5%;
+  left: 10%;
+}
+.left-box .container .right .container {
+  height: 570px;
+  width: 739.42px;
+}
+.left-box .container .right .container h2 {
+  font-size: 48px;
+}
+.left-box .container .right .container p {
+  font-family: "Antic Didone", sans-serif !important;
+  font-size: 20px;
+}
+.left-box .container .right .container .button-group {
+  position: relative;
+  top: 2%;
+}
+.left-box .container .right .container .button1 {
+  border-width: 1px;
+  border-color: #1E3D64;
+  padding: 2px;
+  font-size: 20px;
+}
+.left-box .container .right .container .button2 {
+  border-width: 1px;
+  border-color: #1E3D64;
+  padding: 2px;
+  font-size: 20px;
+}
+
+#treatment-right {
+  background-color: #d7ebe4;
+  height: 80vh;
+  width: 100%;
+}
+
+.right-box .container {
+  position: relative;
+  top: 50%;
+}
+.right-box .right .container {
+  position: relative;
+  left: 55%;
+}
+.right-box .right .container img {
+  border-top-left-radius: 5rem;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.right-box .left .doctor-box {
+  position: relative;
+  top: 10%;
+}
+.right-box .left .doctor-box h2 {
+  margin-left: 20px;
+  font-size: 28px;
+}
+.right-box .left .doctor-box p {
+  font-size: 20px;
+  margin-left: 20px;
+}
+.right-box .left h2 {
+  font-size: 48px;
+}
+.right-box .left p {
+  font-family: "Antic Didone", sans-serif !important;
+  font-size: 20px;
+}
+.right-box .left .button-group {
+  position: relative;
+  top: 24%;
+}
+.right-box .left .button1 {
+  border-width: 1px;
+  border-color: #1E3D64;
+  padding: 2px;
+  font-size: 20px;
+}
+.right-box .left .button2 {
+  border-width: 1px;
+  border-color: #1E3D64;
+  padding: 2px;
+  font-size: 20px;
+}
+
+#information {
+  background-color: #E8F4F4;
+}
+
+.information .container {
+  height: 30vh;
+}
+
+#contact-form {
+  background-color: #d7ebe4;
+  height: 80vh;
+  width: 100%;
+}
+
+.contact-form .container {
+  height: 80vh;
+  width: 100%;
+}
+.contact-form .container .kutu {
+  background-color: #E8F4F4;
+  position: relative;
+  top: 25%;
+  height: 40vh;
+  width: auto;
+}
+.contact-form .container .kutu h2 {
+  font-size: 36px;
+  font-family: "Antic Didone", sans-serif;
+  color: #1E3D64;
+  position: relative;
+  top: 35%;
+}
+.contact-form .container .kutu p {
+  font-size: 28px;
+  position: relative;
+  top: 35%;
+}
+.contact-form .container .kutu button {
+  border-width: 1px;
+  border-color: #1E3D64;
+  padding: 2px;
+  font-size: 20px;
+  position: relative;
+  top: 35%;
+}
+
+#populer-treatments {
+  background-color: #E8F4F4;
+  font-family: "Antic Didone", sans-serif;
+}
+
+.populer-treatments {
+  height: 100vh;
+}
+.populer-treatments .container {
+  background-color: #E8F4F4;
+  height: 100vh;
+}
+.populer-treatments .container .upper-text .first {
+  text-transform: uppercase;
+  color: #E87F7E !important;
+}
+.populer-treatments .container .upper-text h2 {
+  font-size: 48px;
+  font-family: "Antic Didone", sans-serif;
+  color: #1E3D64;
+}
+.populer-treatments .container .upper-text .end {
+  font-size: 20px;
+}
+.populer-treatments .container h2 {
+  font-size: 48px;
+  font-family: "Antic Didone", sans-serif;
+  color: #1E3D64;
+  text-align: center;
+}
+.populer-treatments .container img {
+  position: relative;
+  top: 20%;
+  border-top-right-radius: 3rem;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.populer-treatments .container p {
+  position: relative;
+  top: 20%;
+  font-family: "Antic Didone", sans-serif !important;
+  color: #1E3D64;
+}
+.populer-treatments .container .button2 {
+  position: relative;
+  top: 20%;
+  border-width: 1px;
+  border-color: #1E3D64;
+  padding: 2px;
+  font-size: 20px;
+}
+
+#testimonials {
+  background-color: #E8F4F4;
+}
+
+.testimonials {
+  height: 90vh;
+}
+.testimonials .container {
+  height: 90vh;
+}
+.testimonials .container p {
+  color: #1E3D64;
+  font-size: 20px;
+}
+.testimonials .container img {
+  border-top-right-radius: 1rem;
+  filter: drop-shadow(5px 5px 5px #222);
+  height: 100px;
+  width: 120px;
+}
+.testimonials .container .name {
+  font-size: 23px !important;
+}
+.testimonials .container .ust-kisim {
+  position: relative;
+  left: 35%;
+}
+.testimonials .container .ust-kisim .ilk {
+  position: relative;
+  left: 8%;
+  color: #E87F7E;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.testimonials .container .ust-kisim h2 {
+  font-size: 2rem;
+}
+.testimonials .container .ust-kisim .info {
+  color: #1E3D64 !important;
+}
+
+.threebox {
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+  top: 91%;
+  left: 10%;
+}
+.threebox .container {
+  height: 16vh;
+}
+.threebox .box1 .container {
+  background-color: white;
+  height: 16vh;
+  width: 40vh;
+}
+.threebox .box1 .container h2 {
+  font-size: 40px;
+  position: relative;
+  top: 20%;
+  left: 20%;
+}
+.threebox .box1 .container a {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  font-size: 24px;
+}
+.threebox .box1 .container img {
+  position: relative;
+  left: 70%;
+  bottom: 62%;
+}
+.threebox .box2 .container {
+  background-color: white;
+  height: 16vh;
+  width: 40vh;
+}
+.threebox .box2 .container h2 {
+  font-size: 40px;
+  position: relative;
+  top: 20%;
+  left: 20%;
+}
+.threebox .box2 .container a {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  font-size: 24px;
+}
+.threebox .box2 .container img {
+  position: relative;
+  left: 75.1%;
+  bottom: 62%;
+}
+.threebox .box3 .container {
+  background-color: white;
+  height: 16vh;
+  width: 40vh;
+}
+.threebox .box3 .container h2 {
+  font-size: 40px;
+  position: relative;
+  top: 20%;
+  left: 20%;
+}
+.threebox .box3 .container a {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  font-size: 24px;
+}
+.threebox .box3 .container img {
+  position: relative;
+  left: 75.1%;
+  bottom: 62%;
+}
+
+#footer {
+  font-family: "Antic Didone", sans-serif;
+  color: #1E3D64;
+  height: 80vh;
+  background-color: #E8F4F4;
+}
+
+.footer .map {
+  position: relative;
+  top: 30%;
+}
+.footer .info {
+  right: 0;
+  height: 40vh;
+}
+.footer .info img {
+  height: 150px;
+  width: 400px;
+  filter: drop-shadow(5px 5px 5px #222);
+  position: relative;
+  top: 20%;
+  right: 5%;
+}
+.footer .info .address {
+  position: relative;
+  top: 30%;
+  font-size: 20px;
+  font-family: "Antic Didone", sans-serif;
+  color: #1E3D64;
+}
+.footer .info .address h3 {
+  color: #E87F7E;
+  font-family: "Antic Didone", sans-serif;
+}
+.footer .info .contact {
+  font-family: "Antic Didone", sans-serif;
+  color: #1E3D64;
+  position: relative;
+  top: 40%;
+  font-size: 20px;
+}
+.footer .info .contact h3 {
+  color: #E87F7E;
+  font-family: "Antic Didone", sans-serif;
+}
+.footer .bottom-bar {
+  position: relative;
+  justify-content: center;
+  top: 35%;
+  font-family: "Montserrat", Sans-serif;
+  border-top-width: 2px;
+}
+.footer .bottom-bar .a {
+  position: relative;
+  right: 10%;
+}
+.footer .bottom-bar .social-media {
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  left: 5%;
+  padding: 2px;
+}
+.footer .bottom-bar .a2 {
+  position: relative;
+  left: 10%;
+}
+
+#about {
+  height: 150vh;
+  font-family: "Antic Didone", sans-serif !important;
+  color: #1E3D64;
+}
+
+.about {
+  height: 150vh;
+}
+.about .first-part {
+  height: 50vh;
+  background-color: #d7ebe4;
+  position: relative;
+}
+.about .first-part img {
+  position: absolute;
+  bottom: 0;
+  border-top-right-radius: 5rem;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.about .first-part .container {
+  height: 50vh;
+  position: relative;
+  text-align: start;
+}
+.about .first-part .container h4 {
+  font-size: 20px;
+  color: #E87F7E;
+  font-family: "Montserrat", Sans-serif;
+}
+.about .first-part .container h2 {
+  font-size: 36px;
+}
+.about .first-part .container p {
+  font-size: 20px;
+}
+.about .second-part {
+  height: 100vh;
+  background-color: #E8F4F4;
+}
+.about .second-part .container {
+  position: relative;
+}
+.about .second-part .left h2 {
+  font-size: 36px;
+}
+.about .second-part .left p {
+  font-size: 28px;
+}
+.about .second-part .right img {
+  position: absolute;
+  right: 0;
+  height: 600px;
+  width: 500px;
+  border-top-left-radius: 5rem;
+  filter: drop-shadow(5px 5px 5px #222);
+  justify-items: end;
+}
+
+/*# sourceMappingURL=main.css.map */
