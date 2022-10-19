@@ -13,57 +13,56 @@ $instagram = str_replace('-', '', str_replace(')', '', str_replace('(', '', str_
 $twitter = str_replace('-', '', str_replace(')', '', str_replace('(', '', str_replace(' ', '', $site_data->twitter))));
 ?>
 
+<?php if ((isset($about)) and ($about == TRUE)) : ?>
 
- <!-- <?php vdebug($about, false); ?> -->
-<section id="about" class="about">
-<div class="mad-content no-pd">
-        <div class="container-fluid">
-          <div class="mad-section">
-            <div class="row justify-content-center">
-              <div class="col-xl-6 col-lg-10">
-                <h5 class="align-center mad-text-color-3">
+<div class="orb-wrapper">
+		<div id="orb-dynamic-content" class="transition-fade">
+			<div class="orb-page-frame orb-about-1">
+				<div class="orb-content">
+					<div class="orb-grid orb-sm-reverse">
+						<div class="orb-g-40 orb-sm-100">
+							<div class="rb-object-frame">
+								<div class="orb-photo-frame orb-obj-1">
+									<img src="<?= site_url($about[1]->path . $about[1]->file_name); ?>" alt="photo">
+								</div>
+							</div>
+						</div>
+						<div class="orb-g-60 orb-sm-100">
+							<div class="orb-about-frame">
+								<div class="orb-grid">
+									<div class="orb-g-60 orb-sm-100">
+										<div class="orb-about-text">
+											<h1><?php echo $about[1]->title; ?></h1>
+											<p><?php echo $about[1]->content ?></p>
+										</div>
+									</div>
+									<div class="orb-g-40 orb-sm-100">
+										<div class="orb-position-fix">
+											<div class="orb-deco"></div>
+											<div class="orb-photo-frame orb-obj-2">
+												<img src="<?= site_url($about[0]->path . $about[0]->file_name); ?>" alt="photo">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="orb-bottom-panel">
+						<div class="orb-instagram">
+							<span>Instagram</span>
+							<div class="orb-line"></div>
+							<a href="<?= $site_data->instagram; ?>" target="_blank" data-no-swup><img src="/public/theme/assets/img/ui/insta.svg" alt="Instagram"></a>
+						</div>
+						<a href="mailto:<?=$site_data->email;?>" class="orb-mail" data-no-swup><?=$site_data->email;?></a>
+					</div>
+				</div>
 
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="mad-section no-pt">
-            <div class="mad-entities mad-team type-4 style-2">
-              <article class="mad-entity">
-                <div class="mad-entity-media">
-                  <img src="<?= site_url($about[0]->path . $about[0]->file_name); ?>" alt="">
-                </div>
-                <div class="mad-entity-content">
-                  <div class="content-element-6">
-                    <h2 class="mad-title"><?= $about[0]->title; ?></h2>
-                    <div class="mad-pre-title"><?= $about[0]->subtitle; ?></div>
-                  </div>
-                  <div class="content-element-6">
-                    <p>
-                    <?= $about[0]->content; ?>
-                    </p>
-                  </div>
-                  <div class="mad-social-icons size-2">
-                    <ul>
-                      <li>
-                        <a href="<?=$facebook;?>"><i class="fab fa-facebook-f"></i></a>
-                      </li>
-                      <li>
-                        <a href="<?=$instagram;?>"><i class="fab fa-instagram"></i></a>
-                      </li>
-                      <li>
-                        <a href="<?=$twitter;?>"><i class="fab fa-twitter"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-         
-        </div>
-      </div>
-</section>
+			</div>
+
+		</div>
+	</div>
+	<?php endif; ?>
 
 
 <?php $this->load->view($theme.'views/elements/footer'); ?>

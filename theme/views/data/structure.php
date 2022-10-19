@@ -19,7 +19,6 @@ $structure['anasayfa']['tedaviler'] = array('method' => 'get_articles', 'id_page
 
 $structure['anasayfa']['yorumlar'] = array('method' => 'get_articles', 'id_page' => '59', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs');
 
-$structure['anasayfa']['haberler'] = array('method' => 'get_articles', 'id_page' => '53', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs');
 
 $structure['anasayfa']['uygulamalar'] = array('method' => 'get_articles', 'id_page' => '40', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs');
 

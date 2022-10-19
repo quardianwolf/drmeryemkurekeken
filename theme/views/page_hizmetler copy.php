@@ -14,10 +14,8 @@
               <img class="wp-post-image" src="<?= site_url($w->path . $w->file_name); ?>" alt="<?= $w->caption; ?>">
               <span><?= $w->caption; ?></span>
             </div><!-- .image -->
-          <?php endforeach;  // foreach ($article->media as $w) 
-          ?>
-        <?php endif; //if((isset($article->media)) AND ($article->media == TRUE)):  
-        ?>
+          <?php endforeach;  // foreach ($article->media as $w)  ?>
+        <?php endif; //if((isset($article->media)) AND ($article->media == TRUE)):   ?>
         <div class="row">
           <div class="col-lg-12">
             <div class="entry-content">

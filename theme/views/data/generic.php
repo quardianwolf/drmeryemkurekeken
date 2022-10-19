@@ -10,25 +10,27 @@ $generic = array();
 
 $generic += array('menuler_c' => array('method' => 'get_sub_pages', 'id_page' => '0', 'limit' => '0', 'media_type' => 'ibs'));
 
-$generic += array('iletisim' => array('method' => 'get_articles', 'id_page' => null, 'id_article' => '191', 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
+$generic += array('iletisim' => array('method' => 'get_articles', 'id_page' => '39', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
 
-$generic += array('kozmetik' => array('method' => 'get_page', 'id_page' => '55', 'media_type' => 'ibs'));
-$generic += array('kozmetik_c' => array('method' => 'get_articles', 'id_page' => '55', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
-
-$generic += array('dermatoloji' => array('method' => 'get_page', 'id_page' => '54', 'media_type' => 'ibs'));
-$generic += array('dermatoloji_c' => array('method' => 'get_articles', 'id_page' => '54', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
 
 $generic += array('about' => array('method' => 'get_articles', 'id_page' => '60', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
 
-$generic += array('tedavilerr' => array('method' => 'get_articles', 'id_page' => '40', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
+$generic += array('tedavii' => array('method' => 'get_articles', 'id_page' => '40', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
 
-$generic += array('haberler' => array('method' => 'get_articles', 'id_page' => '53', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
+$generic += array('nav_icerik' => array('method' => 'get_articles', 'id_page' => '56', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
 
-$generic += array('uygulamalar' => array('method' => 'get_articles', 'id_page' => '40', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
+$generic += array('basin' => array('method' => 'get_articles', 'id_page' => '77', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
 
-$generic += array('hesaplamalar' => array('method' => 'get_articles', 'id_page' => '67', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
 
-$generic += array('gebelik' => array('method' => 'get_articles', 'id_page' => '72', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
-$generic += array('yumurtlama' => array('method' => 'get_articles', 'id_page' => '73', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
-$generic += array('tupbebek' => array('method' => 'get_articles', 'id_page' => '74', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
+$generic += array('jinekoloji' => array('method' => 'get_page', 'id_page' => '80', 'media_type' => 'ibs'));
+$generic += array('jinekoloji_c' => array('method' => 'get_articles', 'id_page' => '80', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
 
+$generic += array('tup_bebek' => array('method' => 'get_page', 'id_page' => '81', 'media_type' => 'ibs'));
+$generic += array('tup_bebek_c' => array('method' => 'get_articles', 'id_page' => '81', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
+
+
+$generic += array('blog' => array('method' => 'get_page', 'id_page' => '78', 'media_type' => 'ibs'));
+$generic += array('blog_c' => array('method' => 'get_articles', 'id_page' => '78', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));
+
+$generic += array('basin' => array('method' => 'get_page', 'id_page' => '79', 'media_type' => 'ibs'));
+$generic += array('basin_c' => array('method' => 'get_articles', 'id_page' => '79', 'id_article' => null, 'limit' => '0', 'order_by' => 'logical_date', 'asc_desc' => 'desc', 'media_type' => 'ibs'));

@@ -14,9 +14,11 @@ module.exports = {
         },
         
         
-      extend: { container: {
-        center: true,
-      },},
+      extend: 
+      {
+        
+         container: {center: true, },
+       },
     },
     plugins: [
         require('flowbite/plugin')

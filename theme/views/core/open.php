@@ -67,8 +67,8 @@ $GLOBALS['pageTitle'] = $info['title'];
 
 ?>
 
-<!DOCTYPE html>
-<html lang="<?= $lang_in_use; ?>">
+<!DOCTYPE html >
+<html lang="<?= $lang_in_use; ?>" class="is-preload">
 
 <head>
   <meta charset="utf-8" />
@@ -151,4 +151,4 @@ $GLOBALS['pageTitle'] = $info['title'];
 </head>
 
 <body class="<?= $page_data->id_page != 1 ? 'subpage' : null; ?>">
-  <div id=" mad-page-wrapper" class="mad-page-wrapper">
+

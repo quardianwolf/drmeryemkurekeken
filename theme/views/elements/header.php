@@ -11,72 +11,90 @@ $instagram = str_replace('-', '', str_replace(')', '', str_replace('(', '', str_
 $twitter = str_replace('-', '', str_replace(')', '', str_replace('(', '', str_replace(' ', '', $site_data->twitter))));
 ?>
 
-<header id="mad-header" class="mad-header header-4 mad-header--transparent mad-header--transparent-single ">
-  <div class="mad-pre-header d-none">
-    <div class="container">
-      <div class="mad-header-items">
-        <div class="mad-header-item">
-          <div class="mad-our-info">
-            <div class="mad-info">
-              <i><svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18" fill="none" class="svg replaced-svg">
-                </svg></i>
-              <a><?= $site_data->address; ?></a>
-            </div>
-            <div class="mad-info">
-              <i><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" class="svg replaced-svg">
-                  <path d="M13.9634 8.04248C14.0512 7.49764 14.0127 6.94056 13.8507 6.41211C13.6659 5.8012 13.3271 5.24502 12.8653 4.79422C12.3969 4.34267 11.8195 4.03209 11.2027 3.93689C10.8332 3.87863 10.4549 3.9021 10.096 4.00556M16.6744 9.33107C17.1096 8.03411 17.1085 6.6357 16.6712 5.33941C16.358 4.39963 15.8334 3.53978 15.1357 2.82258C14.4514 2.11008 13.5965 1.57388 12.6474 1.26191C11.5533 0.911277 10.3725 0.912737 9.2794 1.26608M5.41206 6.43916C4.5447 7.26111 4.80641 9.11206 6.04442 10.6862C7.28244 12.2604 9.04974 12.9877 10.0901 12.3863M12.9139 15.9759C12.876 16.0378 12.6751 16.2027 11.9456 16.7276C10.5196 17.7529 7.13557 15.8151 4.18953 12.0706C1.2435 8.326 0.243148 4.647 1.58852 3.56494C2.31435 2.98177 2.5157 2.85119 2.58192 2.84495M13.2103 15.4603L10.4864 11.9982C10.4115 11.9025 10.3785 11.7816 10.3947 11.6622C10.4109 11.5428 10.475 11.4345 10.573 11.361L11.8072 10.4397C11.8559 10.4029 11.9116 10.3759 11.971 10.3601C12.0304 10.3443 12.0924 10.3402 12.1535 10.3478C12.2146 10.3554 12.2735 10.3747 12.3269 10.4046C12.3803 10.4345 12.4271 10.4743 12.4647 10.5219L15.1886 13.9839C15.226 14.0315 15.2534 14.0858 15.2692 14.1437C15.285 14.2016 15.289 14.2619 15.2809 14.3213C15.2727 14.3807 15.2527 14.4379 15.2218 14.4897C15.1909 14.5416 15.1499 14.5869 15.101 14.6233L13.8667 15.5446C13.7684 15.6175 13.6445 15.6495 13.522 15.6337C13.3995 15.6179 13.2884 15.5556 13.213 15.4603H13.2103ZM5.89381 6.15512L3.16996 2.69304C3.09498 2.59725 3.06199 2.47644 3.07821 2.35702C3.09442 2.2376 3.15852 2.12929 3.25648 2.05577L4.49076 1.13498C4.58911 1.06195 4.71314 1.02982 4.83574 1.04561C4.95834 1.06141 5.06954 1.12384 5.14502 1.21926L7.86887 4.68133C7.94436 4.777 7.97781 4.89793 7.96189 5.01759C7.94597 5.13725 7.88198 5.24587 7.78395 5.31964L6.54967 6.24095C6.45132 6.31398 6.32729 6.34611 6.20469 6.33032C6.08209 6.31453 5.97089 6.2521 5.89541 6.15668L5.89381 6.15512Z" stroke="#3D3D3D" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg></i>
-              <span href="tel:+90<?= $headerPhone; ?>"><?= $site_data->phone; ?></span>
-            </div>
-          </div>
-        </div>
-        <div class="mad-header-item">
-          <div class="mad-our-info">
-            <div class="mad-info">
+<div class="orb-wrapper">
+		<!-- page loader -->
+		<div class="orb-loader-frame">
+			<div class="orb-loader">
+				<div class="orb-deco-1">
+					<div class="orb-prog"></div>
+				</div>
+				<div class="orb-deco-2">
+					<div class="orb-spiner"></div>
+				</div>
+			</div>
+		</div>
+		<!-- page loader end -->
+		<div id="orb-dynamic-content" class="transition-fade">
 
-            </div>
-            <div class="mad-info">
-              <div class="mad-social-icons size-small style-2">
-                <ul>
-                  <li>
-                    <a href="<?= $site_data->facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                  </li>
-                  <li>
-                    <a href="<?= $site_data->instagram; ?>" target="_blank"><i class="fab fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="<?= $site_data->twitter; ?>" target="_blank"><i class="fab fa-twitter"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="mad-header-section--sticky-xl">
-    <div class="container">
-      <div class="mad-header-items">
-        <div class="mad-header-item">
-          <a href="/" class="mad-logo">
-            <img src="<?= theme('images/logo3.png'); ?>" alt="" width="200px" class="head-logo" />
-          </a>
-        </div>
-        <div class="mad-header-item">
-        <button class="mad-mobile-nav-btn">
-            <span class="line line-top "></span>
-            <span class="line line-center "></span>
-            <span class="line line-bottom "></span>
-          </button>
-          <!--================ Navigation ================-->
-     
-          <nav class="mad-navigation-container" >
-            <?= $menu; ?>
-            <a href="/tr/iletisim" class="iletime-gec ">İletişime Geç</a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+			<div class="orb-page-frame orb-home-4">
+
+				<div class="orb-top-bar-frame">
+					<div class="orb-content orb-top-bar">
+						<a href="/" class="orb-logo-frame" data-no-swup>
+							<!-- image logo <img src="img/ui/logo.svg" alt="Orabel">-->
+							<!-- svg logo -->
+							<img src="/public/theme/assets/img/photo/logom.png" class="nav-logo">
+						</a>
+						<div class="orb-right-side">
+							<div class="orb-menu-frame">
+								<nav>		
+									<?= $menu; ?>		
+								</nav>
+							</div>
+						</div>
+						<div class="orb-menu-btn">
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="orb-big-menu-frame">
+				<div class="orb-big-menu orb-big-menu-1">
+					<div class="orb-grid">
+						<div class="orb-g-30 orb-md-50 orb-sm-100">
+							<div class="orb-menu-frame orb-fs-menu">
+								<nav>
+								<?= $menu; ?>	
+								</nav>
+							</div>
+						</div>
+						<?php if ((isset($nav_icerik)) and ($nav_icerik == TRUE)) : ?>
+						<div class="orb-g-70 orb-md-50 orb-sm-100">
+							<div class="rb-object-frame">
+								<div class="orb-photo-frame orb-obj-1">
+									<img src="<?= site_url($nav_icerik[0]->path . $nav_icerik[0]->file_name); ?>" alt="photo">
+								</div>
+								<div class="orb-position-fix">
+									<div class="orb-deco"></div>
+									<div class="orb-photo-frame orb-obj-2">
+										<img src="<?= site_url($nav_icerik[1]->path . $nav_icerik[1]->file_name); ?>" alt="photo">
+									</div>
+								</div>
+								<div class="orb-descr">
+									<div class="orb-descr-title">
+										<div>Sosyal Medya</div>
+										<div class="orb-line"></div>
+									</div >
+									<p>Sosyal Medya Hesaplaımızı Takip Edebilirsiniz.</p>
+									<div class="sosyal-icon">
+									<a href="https://www.instagram.com/drmeryemkurekeken/" target="_blank" data-no-swup><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+									<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+									</svg></a>
+									<a href="https://wa.me/<?= $headerPhone; ?>" target="_blank" data-no-swup><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+									<path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+									</svg></a>
+									<a href="https://www.youtube.com/channel/UC-S3lUx61p_Bzr1C3k8PrEw" target="_blank" data-no-swup><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+									<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+									</svg></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<?php endif; ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+                
